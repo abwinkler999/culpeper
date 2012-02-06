@@ -6,5 +6,5 @@
       <%= (link_to book.title, book_path(book)) + " by " + book.author_f + " " + book.author_l %>
     </li>
   <% end %>
-      <%= link_to "Create a New Entry", new_book_path %>
+      <%= link_to "Create a New Entry", new_book_path, :class => "new_book" %>
 </ul>
