@@ -1,10 +1,11 @@
-<h1>All Books</h1>
+<h1>Catalog Index</h1>
 
 <ul>
   <% @books.each do |book| %>
     <li>
-      <%= (link_to book.title, book_path(book)) + " by " + book.author_f + " " + book.author_l %>
+      <%= (link_to book.title, book_path(book), :class => 'book_title') + " by " + book.author_f + " " + book.author_l %>
     </li>
   <% end %>
-      <%= link_to "Create a New Entry", new_book_path, :class => "new_book" %>
+  <br>
+      <%= link_to "Create a New Entry Now", new_book_path, :class => "new_book" %>
 </ul>
