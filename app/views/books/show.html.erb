@@ -1,3 +1,5 @@
 <h1><%= @book.title%></h1>
-<p><%=" by " + @book.author_f + " " + @book.author_l%></p><br>
-<%= link_to "<< Back to Books Directory", books_path %>
+<p><h2><%=" by " + @book.author_f + " " + @book.author_l%></p></h2><br><br>
+<%= link_to "Delete this Catalog Entry", book_path(@book), :method => :delete,
+            :confirm => "Are you sure you wish to delete this book?" %><br><br>
+<%= link_to "<< Back to Catalog Index", books_path %>

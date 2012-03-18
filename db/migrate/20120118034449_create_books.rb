@@ -5,6 +5,7 @@ class CreateBooks < ActiveRecord::Migration
     t.string :author_l
     t.string :author_f
 
+
     t.timestamps
     end
   end
