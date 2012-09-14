@@ -3,10 +3,6 @@ class BooksController < ApplicationController
     @books = Book.find(:all, :order => 'title')
   end
   
-  def catalog
-    @books = Book.find(:all, :order => 'title')
-  end
-  
   def show
     @book = Book.find(params[:id])
   end
