@@ -1,3 +1,4 @@
 Culpeper::Application.routes.draw do
- resources :books
+  root to: 'books#index'
+  resources :books
 end

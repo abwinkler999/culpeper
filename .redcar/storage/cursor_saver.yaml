@@ -1,0 +1,9 @@
+--- 
+cursor_positions: 
+  - :path: db/migrate/20120118034449_create_books.rb
+    :cursor_offset: 0
+    :timestamp: 2012-01-17 22:46:32 -05:00
+  - :path: db/schema.rb
+    :cursor_offset: 0
+    :timestamp: 2012-01-17 22:46:42 -05:00
+files_to_retain: 0
