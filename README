@@ -1,3 +1,7 @@
 Culpeper is a project to build a small, user-friendly library system, for
 organizations such as small museums or clubs which might have a lending
 library.
+
+This implementation designed for the Gahanna Herb Society.
+
+Development back end in SQLite, as deployed on Heroku back end in PostgreSQL.
