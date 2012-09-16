@@ -1,0 +1,21 @@
+<h1>Create a New Catalog Entry</h1>
+<%=  form_for(@book) do |f| %>
+   <p>
+        <%= f.label "Book Title" %><br />
+        <%= f.text_field :title  %>
+   </p>
+
+    <p>
+        <%= f.label "Author's First Name" %><br />
+        <%= f.text_field :author_f %>
+    </p>
+
+    <p>
+        <%= f.label "Author's Last Name"%><br />
+        <%= f.text_field :author_l %>
+    </p>
+
+    <p>
+        <%=  f.submit 'Add Book to Catalog' %>
+    </p>
+<% end %>
