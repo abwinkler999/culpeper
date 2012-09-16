@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Culpeper System - Gahanna Herb Society</title>
+  <title><%="Culpeper System - " + USER%></title>
   <%= stylesheet_link_tag    "default" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="header">
+   <%=image_tag("culpeper.gif", id: "Culpeper", alt:"Nicholas Culpeper")%>
+  <span id="main_title">
+    <h1><%="Culpeper - Electronic Card Catalog of the " + USER%></h1>
+  </span>
+  <%=image_tag("gahanna2.jpg", id: "Gahanna", alt:"Gahanna, Ohio", size: "200x200")%>
+  </div>
+  <div id="content">
+    <%= yield %>
+  </div>
+  <div id="footer">
+  Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a>
+</div>
 </body>
+
 </html>
