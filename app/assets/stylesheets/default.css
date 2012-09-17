@@ -1,14 +1,20 @@
-#header{
+header{
   background-color: springGreen;
-
-  height:220px;
-  #margin-bottom:40px;
+  #height:220px;
+  #width:1075px;
+  #width:100%;
 }
 
 #main_title{
     font-family:Georgia, Serif;
+    font-size:18px;
     #text-align:center;
+    display:inline;
+    padding-right:20px;
+    padding-left:20px;
+    #margin-bottom:50px;
 }
+
 img#culpeper{
   float:left;
 }
@@ -19,11 +25,19 @@ img#gahanna{
 
 #content {
   background-color:paleGreen;
-  #height:400px;
+  margin:0px auto;
+  #float:left;
+  #width:101%;
+  #width:1075px;
+  #padding-left:30%;
+  #height:550px;
+  overflow:scroll;
 }
 
 #footer{
   border-style:solid;
-  border-width:1px;
-  background-color:aqua;
+  #height:50px;
+  #border-width:1px;
+  background-color:springGreen;
+  #margin-top:30px;
 }

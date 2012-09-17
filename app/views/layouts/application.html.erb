@@ -7,19 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="header">
-   <%=image_tag("culpeper.gif", id: "Culpeper", alt:"Nicholas Culpeper")%>
-  <span id="main_title">
-    <h1><%="Culpeper - Electronic Card Catalog of the " + USER%></h1>
-  </span>
-  <%=image_tag("gahanna2.jpg", id: "Gahanna", alt:"Gahanna, Ohio", size: "200x200")%>
-  </div>
+  <header>
+    <%=image_tag("culpeper.gif", id: "Culpeper", alt:"Nicholas Culpeper")%>
+    <h1 id="main_title"><%="Culpeper - Electronic Card Catalog of the " + USER%></h1>
+    <%=image_tag("gahanna2.jpg", id: "Gahanna", alt:"Gahanna, Ohio", size: "200x200")%>
+  </header>
   <div id="content">
     <%= yield %>
   </div>
   <div id="footer">
-  Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a>
-</div>
+    Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a>
+  </div>
 </body>
 
 </html>
