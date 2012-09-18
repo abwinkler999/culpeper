@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
+  <div id="header">
     <%=image_tag("culpeper.gif", id: "Culpeper", alt:"Nicholas Culpeper")%>
     <h1 id="main_title"><%="Culpeper - Electronic Card Catalog of the " + USER%></h1>
     <%=image_tag("gahanna2.jpg", id: "Gahanna", alt:"Gahanna, Ohio", size: "200x200")%>
@@ -17,7 +17,9 @@
   </div>
   <div id="footer">
     Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a>
-    <%= link_to "Administer Card Catalog", new_book_path, :class => "new_book" %>
+    <span id="admin_link">
+      <%= link_to "Administer Card Catalog", new_book_path, :class => "new_book" %>
+    </span>
   </div>
 </body>
 
