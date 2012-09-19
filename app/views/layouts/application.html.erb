@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
   <div class="row">
     <div class="span2">
-      <%=image_tag("culpeper.gif", id: "culpeper", alt:"Nicholas Culpeper", size: "200x200", class:"img-polaroid")%>
+      <%=image_tag("culpeper.gif", id: "culpeper", alt:"Nicholas Culpeper", size: "400x400", class:"img-polaroid")%>
     </div>
     <div class="span8">
       <p><h1>Culpeper</p><p><small>     Electronic Card Catalog of the <%=USER%></small></h1></p>
@@ -25,9 +26,9 @@
   </div>
     
   <footer>
-    Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a>
-      <%= button_to "Administer Card Catalog", new_book_path, method: "get", class:"btn btn-warning" %>
-  </footer>
+    <p>Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a></p>
+      </footer>
+</div>
 </body>
 
 </html>
