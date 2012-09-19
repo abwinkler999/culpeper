@@ -10,8 +10,13 @@ img#gahanna{
   float:right;
 }
 
+#header{
+  padding-bottom:20px;
+}
 #content{
   #height:400px;
+  padding-left:200px;
+  padding-bottom:20px;
 }
 
 #admin_btn{
