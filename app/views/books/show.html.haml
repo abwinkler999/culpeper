@@ -1,0 +1,17 @@
+%p
+  %h4
+    %em= @book.title
+    ="   by " + @book.author_f + " " + @book.author_l
+%br
+- if !@book.isbn.nil?
+  %img{ :src => 'http://covers.openlibrary.org/b/isbn/' + @book.isbn + '-M.jpg', :class => "book_cover" }/
+%ul.unstyled
+  %li="Author: " + @book.author_l + ", " + @book.author_f
+  %li="Title: " + @book.title
+  - if !@book.genre.nil?
+    %li="Genre:" + @book.genre
+  - if !@book.isbn.nil?
+    %li="ISBN: " + @book.isbn
+  %li="Catalog Number: " + @book.id.to_s
+%br
+= link_to "<< Back to Catalog Index", books_path
