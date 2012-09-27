@@ -12,11 +12,8 @@
     <div class="span2">
       <%=image_tag("culpeper.gif", id: "culpeper", alt:"Nicholas Culpeper", size: "400x400", class:"img-polaroid")%>
     </div>
-    <div class="span8">
+    <div class="span8 offset1">
       <p><h1>Culpeper</p><p><small>     Electronic Card Catalog of the <%=USER%></small></h1></p>
-    </div>
-    <div class="span2">
-      <%=image_tag("gahanna2.jpg", id: "gahanna", alt:"Gahanna, Ohio", size: "800x800", class:"img-polaroid")%>
     </div>
   </div>
   <div class="row" id="content">
@@ -24,10 +21,16 @@
       <%= yield %>
     </div>
   </div>
-    
-  <footer>
-    <p>Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a></p>
-      </footer>
+
+    <div class="row" id="foot">
+      <div class="span12">
+        <p>Culpeper designed by <a href="http://www.abwinkler.com">Benjamin Winkler</a></p>
+        <%= button_to "Administer Card Catalog", new_book_path, id:"admin_btn", method: "get", class:"btn btn-warning" %>
+
+     </div>
+    </div>
+
+
 </div>
 </body>
 

@@ -1,0 +1,17 @@
+<h2>Catalog Index</h2>
+
+<ul>
+  <% @books.each do |book| %>
+  <%if !book.isbn.nil? %>
+  <%='<img src="http://covers.openlibrary.org/b/isbn/' + book.isbn + '-S.jpg" />' %>
+  <% else %>
+  <% end %>
+    <li>
+    <%= (link_to book.title, book_path(book), :class => 'book_title') + " by " + book.author_f + " " + book.author_l; %>
+    <% if !book.genre.nil? %>
+    <%= "|TESTING" + book.genre  %>
+    <% end %>
+    </li>
+  <% end %>
+  <br>
+</ul>
