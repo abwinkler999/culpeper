@@ -1,13 +1,18 @@
 html{
-  background-color:paleGreen;
+  #background-color:paleGreen;
 }
 
 img#culpeper{
   float:left;
 }
 
+.book_cover{
+  float:left;
+  margin-right:20px;
+}
+
 #header{
-  background-color:yellow;
+  background-color:darkOliveGreen;
   padding-bottom:20px;
 }
 
@@ -15,13 +20,13 @@ img#culpeper{
   height:400px;
   border-style:solid;
   border-width:1px;
-  background-color:lightgrey;
+  background-color:LightGoldenrodYellow;
   padding-left:200px;
   padding-bottom:20px;
 }
 
 #foot{
-  background-color:red;
+  background-color:darkOliveGreen;
   font-size:smaller;
 }
 

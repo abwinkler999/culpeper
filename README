@@ -5,3 +5,5 @@ library.
 This implementation designed for the Gahanna Herb Society.
 
 Development back end in SQLite, as deployed on Heroku back end in PostgreSQL.
+
+Web layout in Bootstrap.
